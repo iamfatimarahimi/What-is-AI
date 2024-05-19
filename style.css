@@ -1,0 +1,460 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Fjalla+One&display=swap');
+/* .fjalla-one-regular {
+    font-family: "Fjalla One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.anton-regular {
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    font-style: normal; 
+}*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    background-color: #0200fc;
+    overflow-x: hidden;
+}
+:root{
+    --swiper-theme-color:#fff;
+   
+}
+.swiper-pagination-bullet{
+    padding: 5px;
+    background: #fff;
+}
+ header{
+    top: 0;
+    position: fixed;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    z-index: 100;
+    transition: .6s;
+}
+header.sticky {
+    padding: 20px 100px;
+    background: #0547fb;
+    z-index: 1000;
+}
+ .logo {
+    width: 120px;
+    height: 100px;
+    pointer-events: none;
+    margin-right: 270px;
+} 
+ .logo img{
+    width: 100%;
+    height: 100%;
+ }
+ .navigation a{
+    text-decoration: none;
+    color: #fff;
+    padding: 6px 15px;
+    border-radius: 20px;
+    margin: 0 10px;
+    font-weight: 600;
+}
+.navigation a:hover{
+    background-color: rgb(212, 22, 237);
+    color: #fff;
+} 
+.navigation a:enabled{
+    color: red;
+}
+.animation{
+    position: absolute;
+    height: 100%;
+    height: 5px;
+    bottom: 0;
+    z-index: 0;
+    background: #010121;
+    border-radius: 8px;
+    transition: all .5s ease 0s;
+}
+.parallax{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.text {
+    text-align: center;
+    background: #000D65;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+    color: #fff;
+}
+.card{
+    margin:20px auto;
+}
+.card-body{
+    position: relative;
+    background: #2e7dfb;
+    border-radius: 5px; 
+    height: 300px;
+    transition: .4s ease;
+    
+    z-index: 1;
+}
+.card-body::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #2e7dfb;
+    z-index: -1;
+    transform-origin: left;
+    transition: transform 0.8s ease;
+    transform: scaleX(1);
+
+}
+.text .card-body:hover::before{
+    transform-origin: right;
+    transition: transform 0.8s ease;
+        transform: scaleX(0);
+
+
+}
+.text .card-body:hover {
+    background: #0547fb;
+}
+.card-header{
+    color: #000;
+}
+section .animate{
+    transition: .9s;
+}
+.imgSlider .animate{
+    transform: translateX(-500%);
+}
+.imgSlider.Show-animate .animate {
+    transform: translateX(0);
+}
+
+.imgSlider {
+    position: relative;
+    background: #000D65;
+    margin: 0 auto;
+    min-height: 100vh;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+/* .imgSlider::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to , #140c58, transparent);
+    z-index: 10000;
+} */
+.imgSlider .animate {
+    font-size: 45px;
+    position: absolute;
+    top: 20px;
+    margin: 0 auto;
+    color: #fff;
+    font-family: "Fjalla One", sans-serif;
+}
+.slide-container {
+    max-width: 1120px;
+    width: 100%;
+}
+
+.slide-content {
+    margin: 0 40px;
+    overflow: hidden;
+    border-radius: 25px;
+}
+
+.card {
+    width: 350px;
+    border-radius: 25px;
+    background: #fff;
+    border-radius: 50px;
+}
+
+.image-content,
+.card-content {
+    
+    display: flex;
+    align-items: center;
+    /* column arranges flex items
+vertically. */
+    flex-direction: column;
+    padding: 50px 14px;
+}
+
+.image-content {
+    position: relative;
+    /* The row-gap CSS property sets the size of the gap
+(gutter) between an element's rows */
+    row-gap: 5px;
+    padding: 25px 0;
+}
+
+.overlay {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    background:#0547fb;
+    /* border-radius: 25px 25px 0 25px; */
+}
+/* rigt side styling */
+.overlay::before,
+.overlay::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: -40px;
+    height: 40px;
+    width:40px;
+    background: #0547fb;
+    
+}
+/* rigt side styling */
+.overlay::after {
+    border-radius: 0 25px 0 0;
+    background: #fff;
+}
+
+.card-image {
+    position: relative;
+    height: 150px;
+    width:150px;
+    border-radius: 50%;
+    background: #fff;
+    padding: 3px;
+}
+
+.card-img {
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+    border-radius: 50%;
+}
+
+.name {
+    font-size: 18px;
+    font-weight: 500;
+    color: #333;
+}
+
+.description {
+    font-size: 18px;
+    color: #707070;
+    height: 200px;
+    text-align: center;
+    word-wrap: break-word
+}
+
+.button {
+    border: none;
+    font-size: 16px;
+    padding: 8px 16px;
+    background: #4070F4;
+    border-radius: 6px;
+    margin: 14px;
+    transition: all .3s ease-in-out;
+}
+.button a{
+    text-decoration: none;
+    color: #fff;
+}
+.button:hover {
+    border:2px solid #0547fb;
+    
+    background: none;
+}
+.button:hover a{
+    color: #0547fb;
+} 
+.swiper{
+    margin: 80px;
+}
+.swiper-navBtn {
+    color: #4070F4;
+    margin: 20px;
+    padding: 20px;
+    transition: color .3s ease;
+}
+
+.swiper-navBtn :hover {
+    color: #4070F4;
+    margin: 20px;
+        padding: 20px;
+}
+
+.swiper-navBtn::before,
+.swiper-navBtn::after {
+    font-size: 40px;
+}
+
+.swiper-button-next {
+    margin: 5px auto;
+    right: 0;
+}
+
+.swiper-button-prev {
+    margin: 4px auto;
+    left: 0;
+}
+.swiper-pagination {
+    top: 15px;
+}
+#text{
+    position: absolute;
+    font-size: 5em;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
+}
+.parallax img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+.robot{
+    position: relative;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+#backG{
+    width: 100%;
+    height: 1000px;
+}
+.division{
+    
+    color: #fff; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
+    
+}
+.division p{
+    margin: 10px 20px;
+    padding: 80px 5px;
+    position: absolute;
+    top: 20%;
+    right: 0;
+    font-size: 1em;
+    text-align: center;
+    width: 40%;
+    backdrop-filter: blur(20px);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.division h2{
+    font-family: "Fjalla One", sans-serif;
+    position: absolute;
+    transition: all .3 ease;
+    font-size: 4em;
+    right: 10%;
+    top: 10%;
+    -webkit-text-stroke: #0200fc;
+}
+.control {
+    position: absolute;
+    top: 150px;
+    left: 350px;
+    width: 600px;
+    height: 500px;
+}
+ #robot {
+    width: 100%;
+    height: 100%;    
+    /* pointer-events: none; */
+    animation: animateMove 5s ease-in-out infinite;
+}
+@keyframes animateMove {
+    0%,
+        100% {
+            transform: translateY(-100px);
+    
+        }
+    
+        50% {
+            transform: translateY(0px);
+        }
+}
+.slider2{
+    position: relative;
+    background: #000D65;
+    margin: 0 auto;
+    min-height: 100vh;
+    text-align: center;
+    color: #fff;
+    padding: 20px;
+    align-items: center;
+   
+    justify-content: center;
+}
+.wrapper{
+    width: 300px;
+    height: 350px;
+}
+.wrapper img{
+    border-radius: 5px;
+    width: 100%;
+    height: 100%;
+}
+.sec-01{
+    background: #0547fb;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    padding: 80px 100px;
+    color: #fff;
+    align-items: center;
+
+}
+.container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.video{
+    /* display: flex;
+    text-align: center; */
+    height: 80vh;
+    background: #000D65;
+}
+.bgClip{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+ #video{
+    padding-bottom: 130px;
+    border-radius: 10px;
+    width: 1000px;
+    height: 900px;
+
+}
+.media-icons{
+    margin-top: 100px;
+}
+.media-icons a{
+    color: #fff;
+    font-size: 2em;
+    margin: 60px;
+}

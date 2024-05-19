@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- Swiper css -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <!-- cdnjs -->
+    <link
+      rel="stylesheet"
+      href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <!-- css file -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <!-- scrollreveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <style>
+      body {
+        background-color: #0200fc;
+      }
+      span {
+        font-weight: bold;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <div class="logo">
+        <img src="images/logo.png" alt="" />
+      </div>
+
+      <nav class="navigation">
+        <a href="#AIQuotes">AI Quotes</a>
+        <a href="#AIapps">AI Apps</a>
+        <a href="#AIwork">What's AI</a>
+        <div class="animation start-home"></div>
+      </nav>
+    </header>
+    <!-- parallax image -->
+    <section class="parallax">
+      <img src="./images/Untitled-2.png" id="space-ship" />
+      <h2 id="text">What is AI</h2>
+    </section>
+    <!-- text box -->
+    <section class="text">
+      <h1 id="AIQuotes">AI Quotes</h1>
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="card text-white bg-light mb-3" style="max-width: 18rem">
+            <div class="card-header">Stephen Hawking</div>
+            <div class="card-body">
+              <p class="card-text">
+                Success in creating AI would be the biggest event in human
+                history. Unfortunately, it might also be the last, unless we
+                learn how to avoid the risks.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="card text-white bg-light mb-3" style="max-width: 18rem">
+            <div class="card-header">Oren Etzioni</div>
+            <div class="card-body">
+              <p class="card-text">
+                AI is a tool. The choice about how it gets deployed is ours.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="card text-white bg-light mb-3" style="max-width: 18rem">
+            <div class="card-header">Sam Altman</div>
+            <div class="card-body">
+              <p class="card-text">
+                AI will probably most likely lead to the end of the world, but
+                in the meantime, there'll be great companies.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- row2 -->
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="card text-white bg-light mb-3" style="max-width: 18rem">
+            <div class="card-header">Lisa Joy</div>
+            <div class="card-body">
+              <p class="card-text">
+                And nowadays, the idea of AI is not really science fiction
+                anymore - it's just science fact.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="card text-white bg-light mb-3" style="max-width: 18rem">
+            <div class="card-header">Jacob Collier</div>
+            <div class="card-body">
+              <p class="card-text">
+                AI as a tool in music-making is fine, but it's always going to
+                be the humanity in music that makes people want to listen to it.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="card text-white bg-light mb-3" style="max-width: 18rem">
+            <div class="card-header">Daniel Kahneman</div>
+            <div class="card-body">
+              <p class="card-text">
+                By their very nature, heuristic shortcuts will produce biases,
+                and that is true for both humans and artificial intelligence,
+                but the heuristics of AI are not necessarily the human ones.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- image slider -->
+    <section class="imgSlider">
+      <div class="swiper-button-next swiper-navBtn"></div>
+      <div class="swiper-button-prev swiper-navbtn"></div>
+      <h1 id="AIapps" class="animate">Applications that use AI</h1>
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="card swiper-slide">
+            <div class="image-content">
+              <span class="overlay"></span>
+              <div class="card-image">
+                <img src="images/Instagram.png" alt="" class="card-img" />
+              </div>
+            </div>
+            <div class="card-content">
+              <h2 class="name">Instagram</h2>
+              <p class="description">
+                AI teams start by building machine learning models that can do
+                things like recognize what’s in a photo or analyze the text of a
+                post. For example, AI models may be built to learn whether a
+                piece of content contains nudity or graphic content. removing.
+              </p>
+              <button class="button">
+                <a
+                  href="https://later.com/social-media-glossary/instagram-algorithm/#:~:text=Instagram%20uses%20machine%20learning%20and,past%20interactions%20with%20the%20app."
+                  >View More</a
+                >
+              </button>
+            </div>
+          </div>
+          <!-- 1 -->
+          <div class="card swiper-slide">
+            <div class="image-content">
+              <span class="overlay"></span>
+              <div class="card-image">
+                <img src="images/facebook.png" alt="" class="card-img" />
+              </div>
+            </div>
+            <div class="card-content">
+              <h2 class="name">FaceBook</h2>
+              <p class="description">
+                We've used AI systems to help protect our users for a number of
+                years. For example, we use AI to help us detect and address hate
+                speech and other content that violates our policies.the reason
+                why we've been able to cut the prevalence of hate speech on
+                Facebook.
+              </p>
+              <button class="button">
+                <a
+                  href="https://about.fb.com/news/2024/02/labeling-ai-generated-images-on-facebook-instagram-and-threads/#:~:text=We've%20used%20AI%20systems,(as%20of%20Q3%202023)."
+                  >View More</a
+                >
+              </button>
+            </div>
+          </div>
+          <!-- 2 -->
+          <div class="card swiper-slide">
+            <div class="image-content">
+              <span class="overlay"></span>
+              <div class="card-image">
+                <img src="images/Pinterest.png" alt="" class="card-img" />
+              </div>
+            </div>
+            <div class="card-content">
+              <h2 class="name">Pinterest</h2>
+              <p class="description">
+                All the key indicators on the platform – saves, close-ups, or
+                clicks – use the machine learning system to understand what it
+                is you like, and suggest more content like it. Pinterest uses AI
+                so that when people open up the app, they see exactly what
+                they're interested in.
+              </p>
+
+              <button class="button">
+                <a
+                  href="https://www.simplepinmedia.com/ai-on-pinterest/#:~:text=All%20the%20key%20indicators%20on,what%20they're%20interested%20in."
+                  >View More</a
+                >
+              </button>
+            </div>
+          </div>
+          <!-- 3 -->
+          <div class="card swiper-slide">
+            <div class="image-content">
+              <span class="overlay"></span>
+              <div class="card-image">
+                <img src="images/whatsapp.png" alt="" class="card-img" />
+              </div>
+            </div>
+            <div class="card-content">
+              <h2 class="name">Whatsapp</h2>
+              <p class="description">
+                You can choose to chat with Meta AI or choose from other
+                characters with their own personalities and interests. Meta
+                provides the generative AI technology that powers AI experiences
+                on WhatsApp. Learn about AI experiences on WhatsApp in this
+                article.
+              </p>
+
+              <button class="button">
+                <a
+                  href="https://faq.whatsapp.com/2257017191175152#:~:text=You%20can%20choose%20to%20chat,on%20WhatsApp%20in%20this%20article."
+                  >View More</a
+                >
+              </button>
+            </div>
+          </div>
+          <!-- 4 -->
+          <div class="card swiper-slide">
+            <div class="image-content">
+              <span class="overlay"></span>
+              <div class="card-image">
+                <img src="images/TikTok.png" alt="" class="card-img" />
+              </div>
+            </div>
+            <div class="card-content">
+              <h2 class="name">TikTok</h2>
+              <p class="description">
+                It utilizes Artificial Intelligence (AI) to create a seamless
+                user experience and to help content creators devise viral
+                videos. TikTok's recommendation engine utilizes AI to suggest
+                content that is best suited for users, helping them devise the
+                perfect video.
+              </p>
+
+              <button class="button">
+                <a
+                  href="https://www.linkedin.com/pulse/role-ai-tiktok-content-creator-temitope-aluko#:~:text=It%20utilizes%20Artificial%20Intelligence%20(AI,them%20devise%20the%20perfect%20video."
+                  >View More</a
+                >
+              </button>
+            </div>
+          </div>
+          <!-- 5 -->
+          <div class="card swiper-slide">
+            <div class="image-content">
+              <span class="overlay"></span>
+              <div class="card-image">
+                <img src="images/Youtube.png" alt="" class="card-img" />
+              </div>
+            </div>
+            <div class="card-content">
+              <h2 class="name">Youtube</h2>
+              <p class="description">
+                So the question is, does YouTube use AI? The answer is a
+                resounding YES! But this article will dive deeper. We'll uncover
+                how YouTube uses AI, the benefits and risks of artificial
+                intelligence and how social media companies can mitigate them
+              </p>
+
+              <button class="button">
+                <a
+                  href="https://www.linkedin.com/pulse/does-youtube-use-artificial-intelligence-marcus-nyoung-o3txc#:~:text=So%20the%20question%20is%2C%20does,media%20companies%20can%20mitigate%20them."
+                  >View More</a
+                >
+              </button>
+            </div>
+          </div>
+          <!-- 6 -->
+          <div class="card swiper-slide">
+            <div class="image-content">
+              <span class="overlay"></span>
+              <div class="card-image">
+                <img src="images/LinkedIn.png" alt="" class="card-img" />
+              </div>
+            </div>
+            <div class="card-content">
+              <h2 class="name">LinkedIn</h2>
+              <p class="description">
+                AI, or artificial intelligence, is rapidly transforming the way
+                we work and interact with each other. LinkedIn is no exception.
+                In fact, LinkedIn is one of the most powerful platforms where AI
+                can be leveraged to help you achieve your professional goals
+              </p>
+
+              <button class="button">
+                <a
+                  href="https://www.linkedin.com/pulse/using-ai-linkedin-james-coyne#:~:text=AI%2C%20or%20artificial%20intelligence%2C%20is,you%20achieve%20your%20professional%20goals."
+                  >View More</a
+                >
+              </button>
+            </div>
+          </div>
+          <!-- 7 -->
+          <div class="card swiper-slide">
+            <div class="image-content">
+              <span class="overlay"></span>
+              <div class="card-image">
+                <img src="images/snapchat.png" alt="" class="card-img" />
+              </div>
+            </div>
+            <div class="card-content">
+              <h2 class="name">Snapchat</h2>
+              <p class="description">
+                Content shared with My AI, including your location if you've
+                shared that with Snapchat, will be used by My AI to provide
+                relevant and useful responses to your requests, including nearby
+                place recommendations. Your data may also be used by Snap to
+                improve Snap's products.
+              </p>
+
+              <button class="button">
+                <a
+                  href="https://help.snapchat.com/hc/en-us/articles/13266788358932-What-is-My-AI-on-Snapchat-and-how-do-I-use-it#:~:text=Content%20shared%20with%20My%20AI%2C%20including%20your%20location%20if%20you,personalize%20your%20experience%2C%20including%20ads."
+                  >View More</a
+                >
+              </button>
+            </div>
+          </div>
+          <!-- 8 -->
+          <div class="card swiper-slide">
+            <div class="image-content">
+              <span class="overlay"></span>
+              <div class="card-image">
+                <img src="images/Spotify.png" alt="" class="card-img" />
+              </div>
+            </div>
+            <div class="card-content">
+              <h2 class="name">Spotify</h2>
+              <p class="description">
+                Spotify uses artificial intelligence in a ton of smart ways to
+                create an incredible listening experience across its audio
+                streaming platform. This includes an AI DJ feature that curates
+                a personalized selection of music for you based on your
+                preferences.
+              </p>
+
+              <button class="button">
+                <a
+                  href="https://www.marketingaiinstitute.com/blog/spotify-artificial-intelligence#:~:text=Spotify%20uses%20artificial%20intelligence%20in,across%20its%20audio%20streaming%20platform."
+                  >View More</a
+                >
+              </button>
+            </div>
+          </div>
+          <!-- 9 -->
+          <div class="card swiper-slide">
+            <div class="image-content">
+              <span class="overlay"></span>
+              <div class="card-image">
+                <img src="images/Twitter.png" alt="" class="card-img" />
+              </div>
+            </div>
+            <div class="card-content">
+              <h2 class="name">Twitter</h2>
+              <p class="description">
+                Twitter uses AI algorithms to suggest users the accounts they
+                can follow. These personalized suggestions are based on users'
+                contact lists as well as their location, activity, accounts
+                followed, tweets interacted with, etc.Twitter applies AI to its
+                ads, make it possible.
+              </p>
+
+              <button class="button">
+                <a
+                  href="https://www.dresma.ai/ai-in-twitter/#:~:text=Twitter%20uses%20AI%20algorithms%20to,%2C%20tweets%20interacted%20with%2C%20etc."
+                  >View More</a
+                >
+              </button>
+            </div>
+          </div>
+          <!-- End -->
+        </div>
+
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+    <!-- robot animation -->
+    <section class="robot">
+      <div class="division">
+        <h2 id="AIwork" class="header">How does AI work?</h2>
+        <p class="paragraph">
+          It's even more amazing, perhaps, that our existence is quietly being
+          transformed by deep learning algorithms that many of us barely
+          understand, if at all — something so complex that even scientists have
+          a tricky time explaining it. "AI is a family of technologies that
+          perform tasks that are thought to require intelligence if performed by
+          humans," explains Vasant Honavar, a professor and director of the
+          Artificial Intelligence Research Laboratory at Penn State University.
+          "I say 'thought,' because nobody is really quite sure what
+          intelligence is."
+        </p>
+      </div>
+
+      <img src="images/blueBG.jpg" alt="" id="backG" />
+      <div class="control">
+        <img class="img-fluid" src="images/Robot.png" alt="" id="robot" />
+      </div>
+    </section>
+    <!-- image generator -->
+    <section class="slider2">
+      <div class="container2">
+        <h1 class="generator">AI image generator</h1>
+      </div>
+      <p>
+        I asked different AI to make me a cat picture and here are the results
+      </p>
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide wrapper">
+            <img src="images/1.jpg" alt="" />
+          </div>
+          <div class="swiper-slide wrapper">
+            <img src="images/2.jpg" alt="" />
+          </div>
+          <div class="swiper-slide wrapper">
+            <img src="images/3.jpg" alt="" />
+          </div>
+          <div class="swiper-slide wrapper">
+            <img src="images/4.jpg" alt="" />
+          </div>
+          <div class="swiper-slide wrapper">
+            <img src="images/5.jpg" alt="" />
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+    <!-- video -->
+    <section class="video">
+      <div class="bgClip">
+        <video autoplay loop controls id="video">
+          <source
+            src="video/What is Artificial Intelligence.mp4"
+            type="video/mp4"
+          />
+        </video>
+      </div>
+    </section>
+    <!-- bottom of page -->
+    <section class="sec-01">
+      <div class="container">
+        <div class="info">
+          <p>
+            <span>School:</span> Imam khamaneyi <span>Teacher:</span> Rehirane
+            Arabian <span>Designer:</span> Fatima Raimi
+          </p>
+        </div>
+        <div class="media-icons">
+          <a href="" class="icon"><i class="fab fa-facebook"></i></a>
+          <a href="" class="icon"><i class="fab fa-instagram"></i></a>
+          <a href="" class="icon"><i class="fab fa-twitter"></i></a>
+          <a href="" class="icon"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- Script file -->
+    <script src="script.js"></script>
+  </body>
+</html>
